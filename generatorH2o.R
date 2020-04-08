@@ -59,7 +59,7 @@ generatorH2o <- function(cores = -1, puerto = 54321, memRAM = "2g",
                       validation = dataval_h2o,
                       testTrain = datatest_h2o,
                       datah2o = datah2o,
-                      test = test_data)
+                      test = test_h2o)
   }
    
   # Resultados
