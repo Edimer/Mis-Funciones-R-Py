@@ -53,5 +53,4 @@ modeladorR1 <- function(df_train, n_mod = 10, giga_ram = "2g", n_cores = -1,
     max_runtime_secs = tiempo_secs,
     ...)
   
-  return(mod_aml)
-}
+  return(mod_aml) }

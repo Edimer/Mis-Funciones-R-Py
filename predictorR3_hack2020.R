@@ -28,5 +28,4 @@ predictorR3 <- function(mod_h2o, n_cores = -1, giga_ram = "2g", df_test){
            Candidato_rotara = predict) %>%
     mutate(porcentaje_rotacion = round(porcentaje_rotacion, digits = 5))
   
-  return(predicciones)
-}
+  return(predicciones) }

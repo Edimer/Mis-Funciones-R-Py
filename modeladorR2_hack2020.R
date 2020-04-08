@@ -85,5 +85,4 @@ modeladorTRM <- function(ts_trm, frecuencia = 365, fecha1 = "2020-03-21", fecha2
   
   # Retorno
   return(list(pronosticos = pronosticos,
-              forecast_gg = gg))
-}
+              forecast_gg = gg))}

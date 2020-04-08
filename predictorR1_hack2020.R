@@ -14,7 +14,7 @@ predictorR1 <- function(mod_h2o, n_cores = -1, giga_ram = "2g", import = FALSE,
   h2o.no_progress()
   
   if(import == FALSE) {
-    # Coercionando clases atómicas para compatibilidad con h2o
+    # Coercionando clases at?micas para compatibilidad con h2o
     df_test = datos %>%
       mutate_if(is.logical, as.factor)
     
@@ -35,7 +35,7 @@ predictorR1 <- function(mod_h2o, n_cores = -1, giga_ram = "2g", import = FALSE,
     # Importando datos
     df_test = fread(input = df_test, encoding = "UTF-8", sep = ",")
     
-    # Coercionando clases atómicas para compatibilidad con h2o
+    # Coercionando clases at?micas para compatibilidad con h2o
     df_test = df_test %>%
       mutate_if(is.logical, as.factor)
     
@@ -52,5 +52,4 @@ predictorR1 <- function(mod_h2o, n_cores = -1, giga_ram = "2g", import = FALSE,
       mutate(porcentaje_afinidad = round(porcentaje_afinidad, digits = 5))
     
     return(predicciones)
-  }
-}
+  } }

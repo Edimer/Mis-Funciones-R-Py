@@ -138,5 +138,4 @@ modeladorR3 <- function(df_train, df_val, n_mod = 10, giga_ram = "4g", n_cores =
               mod_gbm = modelo_gbm,
               mod_grid_glm = mod_grid_glm,
               mod_gid_gbm = modelo_gbm_grid,
-              mod_grid_rf = modelo_rf_grid))
-}
+              mod_grid_rf = modelo_rf_grid)) }

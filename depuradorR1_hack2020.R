@@ -348,4 +348,3 @@ depuradorR1 <- function(data_candidate, data_vacant, data_stage, data_app,
                 df_test = datos4))
   }
 }
-
