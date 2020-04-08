@@ -50,7 +50,7 @@ ggmetrics_h2o <- function(modelo_h2o, df_test, title_mod){
     
   } else {
     
-    # Matriz de confución: 
+    # Matriz de confusión: 
     pred_class = h2o.predict(modelo_h2o, df_test) %>% as.data.frame() %>% pull(predict)
     real_class = df_test %>% as.data.frame() %>% pull(resultado)
     mtx_conf = confusionMatrix(pred_class, real_class, positive = "1")
