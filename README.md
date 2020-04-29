@@ -4,6 +4,7 @@
 
 - `generatorH2o`: (**en desarrollo**) función que permite estructurar datos para *train*, *validation* y *test*, para machine learning con [h2o](https://www.h2o.ai/) desde R.
 - `depuratorText`: (**en desarrollo**) función para limpiar texto y obtener nube de palabras. Útil para lectura masiva de textos científicos.
+- `cleanText`: función que permite limpiar texto para visualización y modelación. Devuelve dos objetos, `textCorpus` (corpus de palabras tokenizadas) y [`bagWordMatrix`](https://en.wikipedia.org/wiki/Bag-of-words_model), este último es una [matriz dispersa](https://en.wikipedia.org/wiki/Sparse_matrix) apta para modelos de machine learning. [Aquí](https://www.r-bloggers.com/using-sparse-matrices-in-r/) puede consultar manejo de matrices dispersas con R. A diferencia de la función `depuratorText()`, `cleanText()` sólo utiliza la biblioteca [`tm`](https://cran.r-project.org/web/packages/tm/tm.pdf), que es de amplio uso para *text mining* con R.
 - `ggMetricsH2o`: (**en desarrollo**) función para obtener métricas de rendimiento (*performance*) en modelos de machine learning entrenados con [h2o.](https://www.h2o.ai/)
 - **Funciones [hackaton 2020:](https://content.magnetoempleos.com/hackaton)**
     - `depuradorR1_hack2020`: función para depurar datos del reto 1.
