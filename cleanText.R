@@ -21,8 +21,10 @@ cleanText <- function(text, language = "english", bagWord = TRUE){
   # Bag word model --> Sparse matrix for model
   if(bagWord == TRUE){
     bagWordMatrix = DocumentTermMatrix(textCorpus)
+    
+    return(list(textCorpus = textCorpus,
+                bagWordMatrix = bagWordMatrix))
+  } else {
+    return(list(textCorpus = textCorpus))
   }
-  
-  return(list(textCorpus = textCorpus,
-              bagWordMatrix = bagWordMatrix))
 }
