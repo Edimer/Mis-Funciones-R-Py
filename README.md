@@ -2,7 +2,8 @@
 
 ![](https://media1.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif)
 
-- **Machine Learning:**    
+- **Machine Learning:**  
+    - [`boostingML`:](https://github.com/Edimer/Mis-Funciones-R/blob/master/ModelsMachineLearning/boostingML.R) función que permite ajustar modelos de *boosting* basados en árboles, específicamente [xgboost](), [lightgbm]() y [catboost]. Esta función permite implementar validación cruzada ([k-folds]()).
     - [`generatorH2o`:](https://github.com/Edimer/Mis-Funciones-R/blob/master/ModelsMachineLearning/generatorH2o.R) (**en desarrollo**) función que permite estructurar datos para *train*, *validation* y *test*, para machine learning con [h2o](https://www.h2o.ai/) desde R.     
     - [`ggMetricsH2o`:](https://github.com/Edimer/Mis-Funciones-R/blob/master/ModelsMachineLearning/ggmetricsH2o.R) (**en desarrollo**) función para obtener métricas de rendimiento (*performance*) en modelos de machine learning entrenados con [h2o.](https://www.h2o.ai/)      
 - **Text Mining:**           
